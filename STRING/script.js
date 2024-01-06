@@ -52,3 +52,26 @@ let sliceString = paragraphOne.slice(5, 14); // extrair uma pedaço específico 
 console.log(searchWord);
 console.log(idxLetter);
 console.log(sliceString);
+
+/*
+-> EXERCÍCIO 5: DIVISÃO E JOIN 
+ 1 - Crie uma string com várias palavras e divida-a em uma array de palavras.
+ 2 - Junte as palavras de um array em uma única string.
+ 3 - Crie uma string com espaços em branco no início e no final, e remova esses espaços.
+ 4 - Crie uma string com data no formato "dd/mm/yyyy" e converta para o formato "dd-mm-yyyy".
+*/
+
+let newString = "branco, carro, céu, casa, chocolate";
+let trimmedString = "    Olá, Mundo    ";
+let dataOriginal = "13/12/2024";
+let partes = dataOriginal.split("/");
+let dia = partes[0];
+let mes = partes[1];
+let ano = partes[2];
+
+let arr = newString.split(", "); // dividir as palavras em um array
+
+console.log(arr);
+console.log(arr.join("")); // juntar as palavras em uma única string
+console.log(trimmedString.trim()); // remover espaços em branco no início e no final
+console.log(`${dia} - ${mes} - ${ano}`);

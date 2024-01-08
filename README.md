@@ -5,4 +5,5 @@ Este repositório contém soluções para exercícios de JavaScript básico. O o
 ## Estrutura do Projeto
 
 1. Pasta String contém exercícios e resolução do Objeto String.
+2. Pasta Boolean contém resolução de alguns exercícios de comparação lógico.
 

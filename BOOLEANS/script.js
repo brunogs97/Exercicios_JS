@@ -84,4 +84,42 @@ console.log(diaDaSemana(2));
 console.log(diaDaSemana(4));
 console.log(diaDaSemana(6));
 
+/* 
+ 5 - VERIFICAÇÃO DE NÚMEROS PARES
+ * Escreva uma funcção que aceite um número e retorne verdadeiro se o número for par e falso se for ímpar. 
+*/
 
+function numeroPar(num) {
+    if(num % 2 === 0) return true;
+    if(num % 2 === 1) return false;
+}
+
+console.log(numeroPar(2));
+console.log(numeroPar(10));
+console.log(numeroPar(5));
+
+
+/* 
+ 6 - ANO BISSEXTO
+ * Crie uma função que aceite um ano como argumento e retorne verdadeiro se o ano for bissexto
+ e falso se não for. Um ano é bissexto se for divisível por 4, porém, se terminado em 00, precisará ser divisivel por 400. 
+*/
+
+function anoBissexto(ano) {
+    let converteString = String(ano);
+    let arrString = converteString.split('');
+
+    if(arrString[2] === '0' && arrString[3] === '0') {
+        let converteNumber = Number(arrString.join(''));
+        return `${converteNumber % 400 === 0}`;
+    }
+
+    if(ano % 4 === 0) return true;
+
+    return false;
+}
+
+console.log(anoBissexto(2100));
+console.log(anoBissexto(2020));
+console.log(anoBissexto(1900));
+console.log(anoBissexto(2022));

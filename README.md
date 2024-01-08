@@ -6,9 +6,3 @@ Este repositório contém soluções para exercícios de JavaScript básico. O o
 
 1. Pasta String contém exercícios e resolução do Objeto String.
 
-## Como Usar
-
-1. Clone este repositório em sua máquina local:
-
-   ```bash
-   git clone https://github.com/seu-username/exercicios-javascript-basico.git

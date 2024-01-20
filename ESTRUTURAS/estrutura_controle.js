@@ -74,3 +74,36 @@ console.log(categoriaNotas(5));
 console.log(categoriaNotas(9));
 console.log(categoriaNotas(-2));
 console.log(categoriaNotas(42));
+
+/* 
+ 5 - MAIOR DE TRÊS NÚMEROS:
+ *Escreva um programa que recebe três números como entrada e imprime o maior deles.
+*/
+
+function maiorNumero(num) {
+    let maiorNum = Math.max(...num);
+
+    return maiorNum;
+}
+
+console.log(maiorNumero([10, 8, 4]));
+
+/* 
+ 6 - CLASSIFICAÇÃO DE TRIÂNGULOS:
+ *Crie um programa que recebe os comprimentos dos lados de um triângulo e imprime
+ se é equilátero, isóceles ou escaleno.
+*/
+
+function verificaTriangulo (a, b, c) {
+    if(a === b && b === c) {
+        return `Pelos comprimetos apresentado, é um triângulo EQUILÁTERO.`
+    } else if(a === b || a === c || b === c) {
+        return `Pelos comprimetos apresentado, é um triângulo ISÓCELES.`
+    } else {
+        return `Pelos comprimetos apresentado, é um triângulo ESCALENO.`
+    };
+}
+
+console.log(verificaTriangulo(2, 4, 4));
+console.log(verificaTriangulo(5, 5, 5));
+console.log(verificaTriangulo(2, 4, 10));
